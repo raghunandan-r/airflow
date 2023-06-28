@@ -1,0 +1,22 @@
+[2023-06-27 19:04:50,430] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: airflow_ml_pipeline.data_processing manual__2023-06-27T23:04:44.949534+00:00 [queued]>
+[2023-06-27 19:04:50,434] {taskinstance.py:1043} INFO - Dependencies all met for <TaskInstance: airflow_ml_pipeline.data_processing manual__2023-06-27T23:04:44.949534+00:00 [queued]>
+[2023-06-27 19:04:50,434] {taskinstance.py:1249} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-27 19:04:50,434] {taskinstance.py:1250} INFO - Starting attempt 1 of 2
+[2023-06-27 19:04:50,434] {taskinstance.py:1251} INFO - 
+--------------------------------------------------------------------------------
+[2023-06-27 19:04:50,443] {taskinstance.py:1270} INFO - Executing <Task(PythonOperator): data_processing> on 2023-06-27 23:04:44.949534+00:00
+[2023-06-27 19:04:50,446] {standard_task_runner.py:52} INFO - Started process 26912 to run task
+[2023-06-27 19:04:50,448] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'airflow_ml_pipeline', 'data_processing', 'manual__2023-06-27T23:04:44.949534+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dag-pipeline-ml.py', '--cfg-path', '/tmp/tmpsopy5uog', '--error-file', '/tmp/tmpfrxfr3ep']
+[2023-06-27 19:04:50,450] {standard_task_runner.py:80} INFO - Job 5: Subtask data_processing
+[2023-06-27 19:04:50,471] {logging_mixin.py:109} INFO - Running <TaskInstance: airflow_ml_pipeline.data_processing manual__2023-06-27T23:04:44.949534+00:00 [running]> on host DESKTOP-J9U5AAV.
+[2023-06-27 19:04:50,492] {taskinstance.py:1448} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=airflow_ml_pipeline
+AIRFLOW_CTX_TASK_ID=data_processing
+AIRFLOW_CTX_EXECUTION_DATE=2023-06-27T23:04:44.949534+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-06-27T23:04:44.949534+00:00
+[2023-06-27 19:04:50,510] {python.py:175} INFO - Done. Returned value was: None
+[2023-06-27 19:04:50,513] {taskinstance.py:1288} INFO - Marking task as SUCCESS. dag_id=airflow_ml_pipeline, task_id=data_processing, execution_date=20230627T230444, start_date=20230627T230450, end_date=20230627T230450
+[2023-06-27 19:04:50,546] {local_task_job.py:154} INFO - Task exited with return code 0
+[2023-06-27 19:04:50,562] {local_task_job.py:264} INFO - 2 downstream tasks scheduled from follow-on schedule check
